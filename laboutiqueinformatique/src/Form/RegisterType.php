@@ -12,11 +12,8 @@ class RegisterType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('firs_name')
-            ->add('lastname')
             ->add('email')
             ->add('password')
-
         ;
     }
 
