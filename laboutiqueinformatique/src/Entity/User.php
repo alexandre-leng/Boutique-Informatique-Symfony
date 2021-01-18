@@ -45,6 +45,11 @@ class User implements UserInterface
      */
     private $lastname;
 
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $firs_name;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -58,6 +63,7 @@ class User implements UserInterface
     public function setEmail(string $email): self
     {
         $this->email = $email;
+        
 
         return $this;
     }
