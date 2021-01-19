@@ -28,7 +28,6 @@ class RegisterType extends AbstractType
                     'placeholder' => 'Merci de saisir votre prénom'
                 ]
             ])
-
             
             ->add('lastname', TextType::class, [
             'label' => 'Votre nom',
@@ -52,19 +51,25 @@ class RegisterType extends AbstractType
                 ]
             ])
 
-
             ->add('password', RepeatedType::class, [
                 'type' => PasswordType::class,
                 'invalid_message' => 'Le mot de passe et la confirmation doivent être identique.',
                 'label' => 'Votre mot de passe',
                 'required' => true,
-                'first_options' =>  ['label' => 'Mot de passe'],
-                'second_options' => ['label' => 'Confirmez votre mot de passe'],
-                'attr' =>  [
-                    'placeholder' =>'Merci de saisir un mot de passe'
-                ]
-            ])
+                'first_options' =>  [
+                    'label' => 'Mot de passe',
+                    'attr' =>  [
+                        'placeholder' => 'Merci de saisir votre mot de passe.'
+                    ]
+                    ],
 
+                'second_options' => [
+                    'label' => 'Confirmez votre mot de passe',
+                    'attr' => [
+                             'placeholder' =>'Merci de confirmer votre mot de passe.'
+                         ] 
+                    ] 
+                ])
 
             ->add('submit', SubmitType::class,[
                 'label'=> "Sinscrire"
