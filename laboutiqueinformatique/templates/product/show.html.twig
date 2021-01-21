@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ product.name }}- La boutique de l'informatique{% endblock %}
+
+{% block content %}
+    <h1>{{ product.name }}</h1>
+
+{{dump(product)}}
+
+{% endblock %}
