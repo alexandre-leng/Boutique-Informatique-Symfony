@@ -5,5 +5,19 @@
 {% block content %}
     <h1>Nos produits</h1>
 
-    PRODUITS
+
+    <div class='row'>
+        {% for product in products %}
+            <div class="col-md-4">
+               <div class="product-item text-center">
+                    <img src="/uploads/{{ product.illustration }}" alt="{{ product.name }}" class="img-fluid">
+                    <h5>{{ product.name }}</h5>
+                    <span>{{ product.subtitle }}</span>
+                    <span class="product-subtitle"></span>{{ product.subtitle }}
+                    <span class="product-price"></span>{{ product.price }}
+               </div>
+            </div>
+        {% endfor %}
+    </div>
+
 {% endblock %}
