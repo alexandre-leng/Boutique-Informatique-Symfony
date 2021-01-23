@@ -9,3 +9,7 @@ address_add.html.twig => adress_add.html.twig ERREUR
 AccountAddressController =>  AccountAdressController ERREUR
 AddressType.php => AdressType.php ERREUR
 Entity Address.php => Adress.php ERREUR
+
+
+# Pour mettre à jour doctrine
+symfony doctrine:schema:update --force
