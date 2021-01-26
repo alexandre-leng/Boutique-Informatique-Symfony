@@ -70,6 +70,6 @@ class __TwigTemplate_b0cbf1daff462416065c9f6f60cbf3f12873ef2c1b07bbf16255b7eee6a
     public function getSourceContext()
     {
         return new Source("<span class=\"badge badge-secondary\">{{ 'label.empty'|trans(domain = 'EasyAdminBundle') }}</span>
-", "@EasyAdmin/label/empty.html.twig", "C:\\Users\\alexa\\Documents\\ALL GIT\\LBI-71b98eec0840e49b3b406dc76e04e3d5f3fba715\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\label\\empty.html.twig");
+", "@EasyAdmin/label/empty.html.twig", "C:\\Users\\alexa\\Documents\\ALL GIT\\La-boutique-informatique_AL\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\label\\empty.html.twig");
     }
 }

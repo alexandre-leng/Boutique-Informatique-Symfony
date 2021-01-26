@@ -710,6 +710,6 @@ class __TwigTemplate_e31fe6aef97b41d68cb653b43c3d8a23973cbfa086acd6f6f636d21e167
         </div>
     {% endfor %}
 {% endblock %}
-", "@WebProfiler/Collector/mailer.html.twig", "C:\\Users\\alexa\\Documents\\ALL GIT\\LBI-71b98eec0840e49b3b406dc76e04e3d5f3fba715\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\mailer.html.twig");
+", "@WebProfiler/Collector/mailer.html.twig", "C:\\Users\\alexa\\Documents\\ALL GIT\\La-boutique-informatique_AL\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\mailer.html.twig");
     }
 }

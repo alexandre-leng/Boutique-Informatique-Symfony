@@ -482,6 +482,6 @@ class __TwigTemplate_52ed57237133da4d87f57eac388999dd8ef37f67a255d50643d4987962d
         {% endfor %}
     </table>
 {% endmacro %}
-", "@WebProfiler/Collector/events.html.twig", "C:\\Users\\alexa\\Documents\\ALL GIT\\LBI-71b98eec0840e49b3b406dc76e04e3d5f3fba715\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\events.html.twig");
+", "@WebProfiler/Collector/events.html.twig", "C:\\Users\\alexa\\Documents\\ALL GIT\\La-boutique-informatique_AL\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\events.html.twig");
     }
 }

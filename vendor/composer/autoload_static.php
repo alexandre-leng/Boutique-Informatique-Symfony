@@ -574,6 +574,8 @@ class ComposerStaticInit3d0e2c88c68d084a209308becdc7bc61
     );
 
     public static $classMap = array (
+        'App\\Classe\\Cart' => __DIR__ . '/../..' . '/src/Classe/Cart.php',
+        'App\\Classe\\Search' => __DIR__ . '/../..' . '/src/Classe/Search.php',
         'App\\Controller\\AccountAddressController' => __DIR__ . '/../..' . '/src/Controller/AccountAddressController.php',
         'App\\Controller\\AccountController' => __DIR__ . '/../..' . '/src/Controller/AccountController.php',
         'App\\Controller\\AccountPasswordController' => __DIR__ . '/../..' . '/src/Controller/AccountPasswordController.php',
@@ -583,6 +585,7 @@ class ComposerStaticInit3d0e2c88c68d084a209308becdc7bc61
         'App\\Controller\\Admin\\UserCrudController' => __DIR__ . '/../..' . '/src/Controller/Admin/UserCrudController.php',
         'App\\Controller\\CartController' => __DIR__ . '/../..' . '/src/Controller/CartController.php',
         'App\\Controller\\HomeController' => __DIR__ . '/../..' . '/src/Controller/HomeController.php',
+        'App\\Controller\\OrderController' => __DIR__ . '/../..' . '/src/Controller/OrderController.php',
         'App\\Controller\\ProductController' => __DIR__ . '/../..' . '/src/Controller/ProductController.php',
         'App\\Controller\\RegisterController' => __DIR__ . '/../..' . '/src/Controller/RegisterController.php',
         'App\\Controller\\SecurityController' => __DIR__ . '/../..' . '/src/Controller/SecurityController.php',

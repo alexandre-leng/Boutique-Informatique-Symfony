@@ -243,6 +243,6 @@ class __TwigTemplate_164b8834e3a334a2e2c1bc115fc0fe2fa437351a3d0be9bcb17ed7bafec
 <hr class=\"featurette-divider\">
 
 <!-- /END THE FEATURETTES -->
-{% endblock %}", "home/index.html.twig", "C:\\Users\\alexa\\Documents\\ALL GIT\\LBI-71b98eec0840e49b3b406dc76e04e3d5f3fba715\\templates\\home\\index.html.twig");
+{% endblock %}", "home/index.html.twig", "C:\\Users\\alexa\\Documents\\ALL GIT\\La-boutique-informatique_AL\\templates\\home\\index.html.twig");
     }
 }

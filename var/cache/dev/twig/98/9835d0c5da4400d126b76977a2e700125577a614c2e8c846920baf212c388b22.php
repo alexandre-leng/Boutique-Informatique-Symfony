@@ -417,6 +417,6 @@ class __TwigTemplate_99a881bf25a1c3ac62e7dfdec545f87e97f78b79c192cecec6f5653251f
     });
 })();
 </script>
-", "@WebProfiler/Profiler/settings.html.twig", "C:\\Users\\alexa\\Documents\\ALL GIT\\LBI-71b98eec0840e49b3b406dc76e04e3d5f3fba715\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\settings.html.twig");
+", "@WebProfiler/Profiler/settings.html.twig", "C:\\Users\\alexa\\Documents\\ALL GIT\\La-boutique-informatique_AL\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\settings.html.twig");
     }
 }

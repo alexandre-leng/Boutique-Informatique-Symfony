@@ -195,6 +195,6 @@ class __TwigTemplate_b6adf2ced009d1b014c8d96dfd702c73f540b1b216e8ad4f9e3386f956a
         });
     </script>
 {% endblock javascript_filter_modal %}
-", "@EasyAdmin/crud/includes/_filters_modal.html.twig", "C:\\Users\\alexa\\Documents\\ALL GIT\\LBI-71b98eec0840e49b3b406dc76e04e3d5f3fba715\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\crud\\includes\\_filters_modal.html.twig");
+", "@EasyAdmin/crud/includes/_filters_modal.html.twig", "C:\\Users\\alexa\\Documents\\ALL GIT\\La-boutique-informatique_AL\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\crud\\includes\\_filters_modal.html.twig");
     }
 }

@@ -1186,6 +1186,6 @@ div.sf-toolbar .sf-toolbar-block a:hover {
         display: none !important;
     }
 }
-", "@WebProfiler/Profiler/toolbar.css.twig", "C:\\Users\\alexa\\Documents\\ALL GIT\\LBI-71b98eec0840e49b3b406dc76e04e3d5f3fba715\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\toolbar.css.twig");
+", "@WebProfiler/Profiler/toolbar.css.twig", "C:\\Users\\alexa\\Documents\\ALL GIT\\La-boutique-informatique_AL\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\toolbar.css.twig");
     }
 }

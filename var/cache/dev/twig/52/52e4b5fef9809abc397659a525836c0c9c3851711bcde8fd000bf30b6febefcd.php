@@ -142,6 +142,6 @@ class __TwigTemplate_fbca516ae30e6adfcf796eb0523ae4bcd61f6e7d27c8b33f4c157ba9bf2
      - Mes commandes <br>
      <hr>
 {% endblock %}
-", "account/index.html.twig", "C:\\Users\\alexa\\Documents\\ALL GIT\\LBI-71b98eec0840e49b3b406dc76e04e3d5f3fba715\\templates\\account\\index.html.twig");
+", "account/index.html.twig", "C:\\Users\\alexa\\Documents\\ALL GIT\\La-boutique-informatique_AL\\templates\\account\\index.html.twig");
     }
 }

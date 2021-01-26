@@ -105,6 +105,6 @@ class __TwigTemplate_09d132e56c49dbe22d2d4d4e4c6fcf3831f46326ffcb19e116b188f4a23
 
     {{ form(form) }}
     
-{% endblock %}", "register/index.html.twig", "C:\\Users\\alexa\\Documents\\ALL GIT\\LBI-71b98eec0840e49b3b406dc76e04e3d5f3fba715\\templates\\register\\index.html.twig");
+{% endblock %}", "register/index.html.twig", "C:\\Users\\alexa\\Documents\\ALL GIT\\La-boutique-informatique_AL\\templates\\register\\index.html.twig");
     }
 }

@@ -61,6 +61,6 @@ class __TwigTemplate_7eaf91c245858af03ad0835f049b5e4a16e95da90c141892e9aa39874ee
     {
         return new Source("{# this template is rendered when an error or exception occurs while
    trying to get the value of the field (by default nothing is displayed) #}
-", "@EasyAdmin/label/undefined.html.twig", "C:\\Users\\alexa\\Documents\\ALL GIT\\LBI-71b98eec0840e49b3b406dc76e04e3d5f3fba715\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\label\\undefined.html.twig");
+", "@EasyAdmin/label/undefined.html.twig", "C:\\Users\\alexa\\Documents\\ALL GIT\\La-boutique-informatique_AL\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\label\\undefined.html.twig");
     }
 }

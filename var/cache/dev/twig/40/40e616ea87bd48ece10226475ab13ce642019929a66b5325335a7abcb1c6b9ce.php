@@ -226,6 +226,6 @@ class {{ dashboard_controller_class }} extends AbstractDashboardController
 }
     </pre>
 {% endblock %}
-", "@EasyAdmin/welcome.html.twig", "C:\\Users\\alexa\\Documents\\ALL GIT\\LBI-71b98eec0840e49b3b406dc76e04e3d5f3fba715\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\welcome.html.twig");
+", "@EasyAdmin/welcome.html.twig", "C:\\Users\\alexa\\Documents\\ALL GIT\\La-boutique-informatique_AL\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\welcome.html.twig");
     }
 }

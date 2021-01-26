@@ -21,8 +21,8 @@ class ProductController extends AbstractController
     }
 
     /**
-     * @Route("/nos-produits", name="products")
-     */
+    * @Route("/nos-produits", name="products")
+    */
 
     public function index(Request $request)
     {
@@ -44,8 +44,8 @@ class ProductController extends AbstractController
     }
 
     /**
-     * @Route("/produit/{slug}", name="product")
-     */
+    * @Route("/produit/{slug}", name="product")
+    */
 
     public function show($slug)
     {

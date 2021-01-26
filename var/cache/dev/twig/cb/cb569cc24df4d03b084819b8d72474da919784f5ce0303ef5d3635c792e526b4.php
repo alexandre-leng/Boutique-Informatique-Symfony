@@ -155,6 +155,6 @@ class __TwigTemplate_f07dc501c5d0097380dd130088a60ff59d041a3144e3bda7a30249b9fe1
         </span>
     </button>
 {% endif %}
-", "@EasyAdmin/crud/action.html.twig", "C:\\Users\\alexa\\Documents\\ALL GIT\\LBI-71b98eec0840e49b3b406dc76e04e3d5f3fba715\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\crud\\action.html.twig");
+", "@EasyAdmin/crud/action.html.twig", "C:\\Users\\alexa\\Documents\\ALL GIT\\La-boutique-informatique_AL\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\crud\\action.html.twig");
     }
 }

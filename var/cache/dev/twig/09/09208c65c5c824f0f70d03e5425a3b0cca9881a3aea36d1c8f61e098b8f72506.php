@@ -975,6 +975,6 @@ class Theme {
         return hash >>> 0;
     }
 }
-", "@WebProfiler/Collector/time.js", "C:\\Users\\alexa\\Documents\\ALL GIT\\LBI-71b98eec0840e49b3b406dc76e04e3d5f3fba715\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\time.js");
+", "@WebProfiler/Collector/time.js", "C:\\Users\\alexa\\Documents\\ALL GIT\\La-boutique-informatique_AL\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\time.js");
     }
 }

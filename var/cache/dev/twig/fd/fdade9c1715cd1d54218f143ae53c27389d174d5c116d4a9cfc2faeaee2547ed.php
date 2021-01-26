@@ -196,6 +196,6 @@ class __TwigTemplate_e00b6d8e45bdf2da62c11db7307108148521c3263351c9c45feb9c2f022
     
     
 {% endblock %}
-", "product/index.html.twig", "C:\\Users\\alexa\\Documents\\ALL GIT\\LBI-71b98eec0840e49b3b406dc76e04e3d5f3fba715\\templates\\product\\index.html.twig");
+", "product/index.html.twig", "C:\\Users\\alexa\\Documents\\ALL GIT\\La-boutique-informatique_AL\\templates\\product\\index.html.twig");
     }
 }

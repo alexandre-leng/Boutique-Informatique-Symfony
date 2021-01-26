@@ -95,6 +95,6 @@ class __TwigTemplate_ebc8367ffce8b4b31644b77853e11fb3c649b55f22b5c1e8f64b7fb301d
 {% if ea_select2_locale != 'en' %}
     <script src=\"{{ asset('bundles/easyadmin/select2/i18n/' ~ ea_select2_locale ~ '.js') }}\"></script>
 {% endif %}
-", "@EasyAdmin/crud/includes/_select2_widget.html.twig", "C:\\Users\\alexa\\Documents\\ALL GIT\\LBI-71b98eec0840e49b3b406dc76e04e3d5f3fba715\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\crud\\includes\\_select2_widget.html.twig");
+", "@EasyAdmin/crud/includes/_select2_widget.html.twig", "C:\\Users\\alexa\\Documents\\ALL GIT\\La-boutique-informatique_AL\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\crud\\includes\\_select2_widget.html.twig");
     }
 }

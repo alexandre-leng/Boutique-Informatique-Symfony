@@ -451,6 +451,6 @@ class __TwigTemplate_6ba5cadb19e05dbee14f4d55f8d7dde0b71a289d1d82e67c64eadcb3ef1
 <script src=\"https://code.jquery.com/jquery-3.5.1.slim.min.js\"></script>
 <script src=\"{{ asset('assets/js/bootstrap.bundle.js')}}\"></script>
 </body>
-</html>", "base.html.twig", "C:\\Users\\alexa\\Documents\\ALL GIT\\LBI-71b98eec0840e49b3b406dc76e04e3d5f3fba715\\templates\\base.html.twig");
+</html>", "base.html.twig", "C:\\Users\\alexa\\Documents\\ALL GIT\\La-boutique-informatique_AL\\templates\\base.html.twig");
     }
 }

@@ -173,7 +173,7 @@ class __TwigTemplate_124ae0bac780f97c7046f9aa1e33d995fce1add6848ff8586252c848ea1
                                 <img src=\"";
                 // line 46
                 echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/img/trash.svg"), "html", null, true);
-                echo "\" alt=\"Supprimer le produit\">
+                echo "\" height=\"18px\" alt=\"Supprimer le produit\">
                             </a>
                             
                         </td>
@@ -199,7 +199,10 @@ class __TwigTemplate_124ae0bac780f97c7046f9aa1e33d995fce1add6848ff8586252c848ea1
             // line 57
             echo twig_escape_filter($this->env, twig_number_format_filter($this->env, ((isset($context["total"]) || array_key_exists("total", $context) ? $context["total"] : (function () { throw new RuntimeError('Variable "total" does not exist.', 57, $this->source); })()) / 100), 2, ",", "."), "html", null, true);
             echo "€ <br>
-            <a href=\"\" class=\"btn btn-success mt-3\"> Valider mon panier</a>
+            <a href=\"";
+            // line 58
+            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("order");
+            echo "\" class=\"btn btn-success mt-3\"> Valider mon panier</a>
         </div>
     ";
         } else {
@@ -228,7 +231,7 @@ class __TwigTemplate_124ae0bac780f97c7046f9aa1e33d995fce1add6848ff8586252c848ea1
 
     public function getDebugInfo()
     {
-        return array (  207 => 61,  200 => 57,  196 => 56,  191 => 53,  185 => 52,  183 => 51,  175 => 46,  171 => 45,  166 => 43,  162 => 42,  156 => 39,  152 => 38,  148 => 37,  143 => 35,  139 => 34,  133 => 31,  129 => 30,  121 => 27,  117 => 25,  112 => 24,  110 => 23,  95 => 10,  93 => 9,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  210 => 61,  204 => 58,  200 => 57,  196 => 56,  191 => 53,  185 => 52,  183 => 51,  175 => 46,  171 => 45,  166 => 43,  162 => 42,  156 => 39,  152 => 38,  148 => 37,  143 => 35,  139 => 34,  133 => 31,  129 => 30,  121 => 27,  117 => 25,  112 => 24,  110 => 23,  95 => 10,  93 => 9,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -278,7 +281,7 @@ class __TwigTemplate_124ae0bac780f97c7046f9aa1e33d995fce1add6848ff8586252c848ea1
                         <td>{{ ((product.product.price * product.quantity) / 100)|number_format(2, ',', '.') }}€</td>
                         <td>
                             <a href=\"{{ path('delete_to_cart' , {'id' : product.product.id }) }}\">
-                                <img src=\"{{ asset('assets/img/trash.svg') }}\" alt=\"Supprimer le produit\">
+                                <img src=\"{{ asset('assets/img/trash.svg') }}\" height=\"18px\" alt=\"Supprimer le produit\">
                             </a>
                             
                         </td>
@@ -290,13 +293,13 @@ class __TwigTemplate_124ae0bac780f97c7046f9aa1e33d995fce1add6848ff8586252c848ea1
         <div class=\"text-right font-weight-bold mb-5\">
             Nombre de produit : {{ cart|length }}<br>
             Total de mon panier : {{ (total / 100)|number_format(2, ',', '.') }}€ <br>
-            <a href=\"\" class=\"btn btn-success mt-3\"> Valider mon panier</a>
+            <a href=\"{{path('order')}}\" class=\"btn btn-success mt-3\"> Valider mon panier</a>
         </div>
     {% else %}
         <hr>
         <p class=\"font-weight-bold\">Votre panier est vide.</p>
     {% endif %}
 {% endblock %}
-", "cart/index.html.twig", "C:\\Users\\alexa\\Documents\\ALL GIT\\LBI-71b98eec0840e49b3b406dc76e04e3d5f3fba715\\templates\\cart\\index.html.twig");
+", "cart/index.html.twig", "C:\\Users\\alexa\\Documents\\ALL GIT\\La-boutique-informatique_AL\\templates\\cart\\index.html.twig");
     }
 }

@@ -193,6 +193,6 @@ class __TwigTemplate_f0ba0f738e85e5972156481a75c0ac2ddc32da026d03beb5af894ee5d4b
         {{ exception.publicMessage|trans(exception.translationParameters, 'EasyAdminBundle') }}
     </div>
 {% endblock %}
-", "@EasyAdmin/exception.html.twig", "C:\\Users\\alexa\\Documents\\ALL GIT\\LBI-71b98eec0840e49b3b406dc76e04e3d5f3fba715\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\exception.html.twig");
+", "@EasyAdmin/exception.html.twig", "C:\\Users\\alexa\\Documents\\ALL GIT\\La-boutique-informatique_AL\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\exception.html.twig");
     }
 }

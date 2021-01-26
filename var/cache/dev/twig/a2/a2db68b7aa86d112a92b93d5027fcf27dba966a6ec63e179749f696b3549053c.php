@@ -103,6 +103,6 @@ class __TwigTemplate_2d02c09d65aa7b9a44b68bf1ba3df0eb939858ff4f876ae6e58fe9fa1d6
         {{ render_as_html ? field.formattedValue|raw : field.formattedValue|striptags }}
     </span>
 {% endif %}
-", "@EasyAdmin/crud/field/text.html.twig", "C:\\Users\\alexa\\Documents\\ALL GIT\\LBI-71b98eec0840e49b3b406dc76e04e3d5f3fba715\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\crud\\field\\text.html.twig");
+", "@EasyAdmin/crud/field/text.html.twig", "C:\\Users\\alexa\\Documents\\ALL GIT\\La-boutique-informatique_AL\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\crud\\field\\text.html.twig");
     }
 }

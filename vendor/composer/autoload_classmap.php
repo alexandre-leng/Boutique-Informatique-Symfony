@@ -6,6 +6,8 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'App\\Classe\\Cart' => $baseDir . '/src/Classe/Cart.php',
+    'App\\Classe\\Search' => $baseDir . '/src/Classe/Search.php',
     'App\\Controller\\AccountAddressController' => $baseDir . '/src/Controller/AccountAddressController.php',
     'App\\Controller\\AccountController' => $baseDir . '/src/Controller/AccountController.php',
     'App\\Controller\\AccountPasswordController' => $baseDir . '/src/Controller/AccountPasswordController.php',
@@ -15,6 +17,7 @@ return array(
     'App\\Controller\\Admin\\UserCrudController' => $baseDir . '/src/Controller/Admin/UserCrudController.php',
     'App\\Controller\\CartController' => $baseDir . '/src/Controller/CartController.php',
     'App\\Controller\\HomeController' => $baseDir . '/src/Controller/HomeController.php',
+    'App\\Controller\\OrderController' => $baseDir . '/src/Controller/OrderController.php',
     'App\\Controller\\ProductController' => $baseDir . '/src/Controller/ProductController.php',
     'App\\Controller\\RegisterController' => $baseDir . '/src/Controller/RegisterController.php',
     'App\\Controller\\SecurityController' => $baseDir . '/src/Controller/SecurityController.php',

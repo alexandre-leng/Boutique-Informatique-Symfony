@@ -81,6 +81,6 @@ class __TwigTemplate_3f7f182e3be713341918b6d104746f406eecc614d7fd593b0b3255fefef
 <span class=\"badge badge-danger\" title=\"{{ 'label.inaccessible.explanation'|trans }}\">
     {{ 'label.inaccessible'|trans }}
 </span>
-", "@EasyAdmin/label/inaccessible.html.twig", "C:\\Users\\alexa\\Documents\\ALL GIT\\LBI-71b98eec0840e49b3b406dc76e04e3d5f3fba715\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\label\\inaccessible.html.twig");
+", "@EasyAdmin/label/inaccessible.html.twig", "C:\\Users\\alexa\\Documents\\ALL GIT\\La-boutique-informatique_AL\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\label\\inaccessible.html.twig");
     }
 }

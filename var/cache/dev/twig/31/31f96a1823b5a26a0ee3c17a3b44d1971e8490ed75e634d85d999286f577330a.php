@@ -120,6 +120,6 @@ class __TwigTemplate_d14c116c0ad7d253fce04b2f6cee50e66845cd791051e83837b1ee44981
         <label class=\"custom-control-label\" for=\"{{ field.uniqueId }}\"></label>
     </div>
 {% endif %}
-", "@EasyAdmin/crud/field/boolean.html.twig", "C:\\Users\\alexa\\Documents\\ALL GIT\\LBI-71b98eec0840e49b3b406dc76e04e3d5f3fba715\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\crud\\field\\boolean.html.twig");
+", "@EasyAdmin/crud/field/boolean.html.twig", "C:\\Users\\alexa\\Documents\\ALL GIT\\La-boutique-informatique_AL\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\crud\\field\\boolean.html.twig");
     }
 }

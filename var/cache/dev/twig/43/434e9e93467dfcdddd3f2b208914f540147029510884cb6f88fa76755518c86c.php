@@ -72,6 +72,6 @@ class __TwigTemplate_bf5d886cc746b611b0d018571be27e6c4017fca3d61fa62b151eeab5b95
 {# @var field \\EasyCorp\\Bundle\\EasyAdminBundle\\Dto\\FieldDto #}
 {# @var entity \\EasyCorp\\Bundle\\EasyAdminBundle\\Dto\\EntityDto #}
 {{ field.formattedValue|raw }}
-", "@EasyAdmin/crud/field/choice.html.twig", "C:\\Users\\alexa\\Documents\\ALL GIT\\LBI-71b98eec0840e49b3b406dc76e04e3d5f3fba715\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\crud\\field\\choice.html.twig");
+", "@EasyAdmin/crud/field/choice.html.twig", "C:\\Users\\alexa\\Documents\\ALL GIT\\La-boutique-informatique_AL\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\crud\\field\\choice.html.twig");
     }
 }

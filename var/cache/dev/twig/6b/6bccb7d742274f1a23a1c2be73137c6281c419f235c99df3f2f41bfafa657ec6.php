@@ -409,6 +409,6 @@ class __TwigTemplate_5abfd080cbf5807cda9e64d32bc0dc555d82d0af1140679fa4a8f3acbba
 </ul>
 
 {% block main_menu_after %}{% endblock %}
-", "@EasyAdmin/menu.html.twig", "C:\\Users\\alexa\\Documents\\ALL GIT\\LBI-71b98eec0840e49b3b406dc76e04e3d5f3fba715\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\menu.html.twig");
+", "@EasyAdmin/menu.html.twig", "C:\\Users\\alexa\\Documents\\ALL GIT\\La-boutique-informatique_AL\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\menu.html.twig");
     }
 }
