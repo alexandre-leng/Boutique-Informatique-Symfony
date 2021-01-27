@@ -18,4 +18,24 @@
             <a href="{{ path('add_to_cart', {'id' : product.id} ) }}" class="btn btn-primary">Ajouter au panier</a>
         </div>
     </div>
+    <hr>
+    <h3>Nos meilleures ventes</h3>
+    <p>Découvrez les produits les plus vendus</p>
+    <div class="row">
+        {% for product in products %}
+            {% if products|length > 4 %}
+                <div class="col-md-2">
+                    {% include 'product/single_product.html.twig' %}
+                </div>
+            {% elseif products|length > 3 %}
+                <div class="col-md-3">
+                    {% include 'product/single_product.html.twig' %}
+                </div>
+            {% elseif products|length < 4 %}
+                <div class="col-md-4">
+                    {% include 'product/single_product.html.twig' %}
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
 {% endblock %}

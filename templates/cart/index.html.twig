@@ -30,12 +30,15 @@
                             {{ product.product.name }} <br>
                             <small>{{ product.product.subtitle }}</small>
                         </td>
+
+                        <!-- container row
+                        col pour wrap -->
                         <td>
-                            <a href="{{ path('decrease_to_cart', { 'id' : product.product.id }) }}" alt="Retirer une quantité du produit">
+                            <a class="btn" href="{{ path('decrease_to_cart', { 'id' : product.product.id }) }}" alt="Retirer une quantité du produit">
                                 <img src="{{ asset('assets/img/minus.svg') }}" alt="Ajouter un produit" height="12px">
                             </a>
                             {{ product.quantity }}
-                            <a href="{{ path('add_to_cart', { 'id' : product.product.id }) }}" alt="Ajouter un produit">
+                            <a class="btn" href="{{ path('add_to_cart', { 'id' : product.product.id }) }}" alt="Ajouter un produit">
                                 <img src="{{ asset('assets/img/plus.svg') }}" alt="Supprimer le produit" height="12px">
                             </a>
                         </td>
@@ -43,7 +46,7 @@
                         <td>{{ ((product.product.price * product.quantity) / 100)|number_format(2, ',', '.') }}€</td>
                         <td>
                             <a href="{{ path('delete_to_cart' , {'id' : product.product.id }) }}">
-                                <img src="{{ asset('assets/img/trash.svg') }}" height="18px" alt="Supprimer le produit">
+                                <img src="{{ asset('assets/img/trash.svg') }}" alt="Supprimer le produit">
                             </a>
                             
                         </td>
@@ -55,7 +58,7 @@
         <div class="text-right font-weight-bold mb-5">
             Nombre de produit : {{ cart|length }}<br>
             Total de mon panier : {{ (total / 100)|number_format(2, ',', '.') }}€ <br>
-            <a href="{{path('order')}}" class="btn btn-success mt-3"> Valider mon panier</a>
+            <a href="{{ path('order') }}" class="btn btn-success mt-3"> Valider mon panier</a>
         </div>
     {% else %}
         <hr>

@@ -69,7 +69,19 @@ class __TwigTemplate_09d132e56c49dbe22d2d4d4e4c6fcf3831f46326ffcb19e116b188f4a23
 
     ";
         // line 6
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 6, $this->source); })()), 'form');
+        if ((isset($context["notification"]) || array_key_exists("notification", $context) ? $context["notification"] : (function () { throw new RuntimeError('Variable "notification" does not exist.', 6, $this->source); })())) {
+            // line 7
+            echo "        <div class=\"alert alert-info\">";
+            echo twig_escape_filter($this->env, (isset($context["notification"]) || array_key_exists("notification", $context) ? $context["notification"] : (function () { throw new RuntimeError('Variable "notification" does not exist.', 7, $this->source); })()), "html", null, true);
+            echo "</div>
+        <hr>
+    ";
+        }
+        // line 10
+        echo "    
+    ";
+        // line 11
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 11, $this->source); })()), 'form');
         echo "
     
 ";
@@ -93,7 +105,7 @@ class __TwigTemplate_09d132e56c49dbe22d2d4d4e4c6fcf3831f46326ffcb19e116b188f4a23
 
     public function getDebugInfo()
     {
-        return array (  72 => 6,  68 => 4,  58 => 3,  35 => 1,);
+        return array (  84 => 11,  81 => 10,  74 => 7,  72 => 6,  68 => 4,  58 => 3,  35 => 1,);
     }
 
     public function getSourceContext()
@@ -103,8 +115,13 @@ class __TwigTemplate_09d132e56c49dbe22d2d4d4e4c6fcf3831f46326ffcb19e116b188f4a23
 {% block content %}
     <h1>Inscription</h1>
 
+    {% if notification %}
+        <div class=\"alert alert-info\">{{ notification }}</div>
+        <hr>
+    {% endif %}
+    
     {{ form(form) }}
     
-{% endblock %}", "register/index.html.twig", "C:\\Users\\alexa\\Documents\\ALL GIT\\La-boutique-informatique_AL\\templates\\register\\index.html.twig");
+{% endblock %}", "register/index.html.twig", "C:\\Users\\alexa\\Documents\\ALL GIT\\LBI_ASH\\templates\\register\\index.html.twig");
     }
 }

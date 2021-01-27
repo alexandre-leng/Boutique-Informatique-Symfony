@@ -2,7 +2,7 @@
 
 namespace App\Controller;
 
-use App\Classe\Cart;
+use App\Class\Cart;
 use App\Entity\Order;
 use App\Entity\OrderDetails;
 use App\Form\OrderType;
@@ -20,11 +20,7 @@ class OrderController extends AbstractController
     {
         $this->entityManager = $entityManager;
     }
-    
-    /**
-    * @Route("/commande", name: 'order', methods: ["POST", "GET"])
-    */
-    
+    #[Route('/commande', name: 'order', methods: ["POST", "GET"])]
     public function index(Cart $cart, Request $request): Response
     {
         if (!$this->getUser()->getAddresses()->getValues()) 
@@ -41,11 +37,8 @@ class OrderController extends AbstractController
             'cart' => $cart->getFull(),
         ]);
     }
-    
-    /**
-    * @Route("/commande/recapitulatif", name: 'order_recap', methods={"POST"})
-    */
-    
+
+    #[Route('/commande/recapitulatif', name: 'order_recap')]
     public function add(Cart $cart, Request $request): Response
     {
         $form = $this->createForm(OrderType::class, null, [
@@ -72,12 +65,14 @@ class OrderController extends AbstractController
 
             // Enregistrer ma commande
             $order = new Order();
+            $reference = $date->format('dmY').'-'.uniqid();
+            $order->setReference($reference);
             $order->setUser($this->getUser());
             $order->setCreatedAt($date);
             $order->setCarrierName($carriers->getName());
             $order->setCarrierPrice($carriers->getPrice());
             $order->setDelivery($delivery_content);
-            $order->setIsPaid(0);
+            $order->setState(0);
 
             $this->entityManager->persist($order);
 
@@ -92,12 +87,13 @@ class OrderController extends AbstractController
                 $this->entityManager->persist($orderDetails);
             }
 
-            // $this->entityManager->flush();
+            $this->entityManager->flush();
 
             return $this->render('order/add.html.twig', [
                 'cart' => $cart->getFull(),
                 'carrier' => $carriers,
-                'delivery' => $delivery_content
+                'delivery' => $delivery_content,
+                'reference' => $order->getReference()
             ]);
 
         }

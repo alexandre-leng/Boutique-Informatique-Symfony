@@ -65,8 +65,7 @@ class __TwigTemplate_fc372df0ec226fa9f414e7ba3db2d64678673f382d666a77405de0b8c44
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
 
-        echo "Se connecter - La Boutique Informatique
-";
+        echo "Se connecter - La Boutique Informatique";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -75,7 +74,7 @@ class __TwigTemplate_fc372df0ec226fa9f414e7ba3db2d64678673f382d666a77405de0b8c44
 
     }
 
-    // line 6
+    // line 5
     public function block_content($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -85,65 +84,89 @@ class __TwigTemplate_fc372df0ec226fa9f414e7ba3db2d64678673f382d666a77405de0b8c44
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "content"));
 
-        // line 7
-        echo "\t<div class=\"block-small\">
-\t\t<form method=\"post\">
-\t\t\t";
-        // line 9
-        if ((isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () { throw new RuntimeError('Variable "error" does not exist.', 9, $this->source); })())) {
-            // line 10
-            echo "\t\t\t\t<div class=\"alert alert-danger\">";
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans(twig_get_attribute($this->env, $this->source, (isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () { throw new RuntimeError('Variable "error" does not exist.', 10, $this->source); })()), "messageKey", [], "any", false, false, false, 10), twig_get_attribute($this->env, $this->source, (isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () { throw new RuntimeError('Variable "error" does not exist.', 10, $this->source); })()), "messageData", [], "any", false, false, false, 10), "security"), "html", null, true);
+        // line 6
+        echo "<div class=\"\">
+    <form method=\"post\">
+        ";
+        // line 8
+        if ((isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () { throw new RuntimeError('Variable "error" does not exist.', 8, $this->source); })())) {
+            // line 9
+            echo "            <div class=\"alert alert-danger\">";
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans(twig_get_attribute($this->env, $this->source, (isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () { throw new RuntimeError('Variable "error" does not exist.', 9, $this->source); })()), "messageKey", [], "any", false, false, false, 9), twig_get_attribute($this->env, $this->source, (isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () { throw new RuntimeError('Variable "error" does not exist.', 9, $this->source); })()), "messageData", [], "any", false, false, false, 9), "security"), "html", null, true);
             echo "</div>
-\t\t\t";
+        ";
         }
+        // line 11
+        echo "        
+        ";
         // line 12
-        echo "
-\t\t\t";
-        // line 13
-        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 13, $this->source); })()), "user", [], "any", false, false, false, 13)) {
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 12, $this->source); })()), "flashes", [0 => "notice"], "method", false, false, false, 12));
+        foreach ($context['_seq'] as $context["_key"] => $context["message"]) {
+            // line 13
+            echo "            <div class=\"alert alert-info\">
+                ";
             // line 14
-            echo "\t\t\t\t<div class=\"mb-3\">
-\t\t\t\t\tYou are logged in as
-\t\t\t\t\t";
-            // line 16
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 16, $this->source); })()), "user", [], "any", false, false, false, 16), "username", [], "any", false, false, false, 16), "html", null, true);
-            echo ",
-\t\t\t\t\t<a href=\"";
-            // line 17
+            echo twig_escape_filter($this->env, $context["message"], "html", null, true);
+            echo "
+            </div>
+        ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['message'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 17
+        echo "
+        ";
+        // line 18
+        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 18, $this->source); })()), "user", [], "any", false, false, false, 18)) {
+            // line 19
+            echo "            <div class=\"mb-3\">
+                You are logged in as ";
+            // line 20
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 20, $this->source); })()), "user", [], "any", false, false, false, 20), "username", [], "any", false, false, false, 20), "html", null, true);
+            echo ", <a href=\"";
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_logout");
             echo "\">Logout</a>
-\t\t\t\t</div>
-\t\t\t";
+            </div>
+        ";
         }
-        // line 20
-        echo "
-\t\t\t<h1 class=\"h3 mb-3 font-weight-normal\">Merci de vous connecter</h1>
-\t\t\t<label for=\"inputEmail\">Votre Email</label>
-\t\t\t<input type=\"email\" value=\"";
         // line 23
-        echo twig_escape_filter($this->env, (isset($context["last_username"]) || array_key_exists("last_username", $context) ? $context["last_username"] : (function () { throw new RuntimeError('Variable "last_username" does not exist.', 23, $this->source); })()), "html", null, true);
+        echo "
+        <h1 class=\"h3 mb-3 font-weight-normal\">Merci de vous connecter</h1>
+        <label for=\"inputEmail\">Votre Email</label>
+        <input type=\"email\" value=\"";
+        // line 26
+        echo twig_escape_filter($this->env, (isset($context["last_username"]) || array_key_exists("last_username", $context) ? $context["last_username"] : (function () { throw new RuntimeError('Variable "last_username" does not exist.', 26, $this->source); })()), "html", null, true);
         echo "\" name=\"email\" id=\"inputEmail\" class=\"form-control\" placeholder=\"Votre adresse email\" required autofocus>
-\t\t\t<label for=\"inputPassword\">Votre mot de passe</label>
-\t\t\t<input type=\"password\" name=\"password\" id=\"inputPassword\" class=\"form-control\" placeholder=\"Votre mot de passe\" required>
+        <label for=\"inputPassword\">Votre mot de passe</label>
+        <input type=\"password\" name=\"password\" id=\"inputPassword\" class=\"form-control\" placeholder=\"Votre mot de passe\" required>
 
-\t\t\t<input
-\t\t\ttype=\"hidden\" name=\"_csrf_token\" value=\"";
-        // line 28
+        <input type=\"hidden\" name=\"_csrf_token\"
+            value=\"";
+        // line 31
         echo twig_escape_filter($this->env, $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderCsrfToken("authenticate"), "html", null, true);
-        echo "\">
+        echo "\"
+        >
 
-
-\t\t\t<button class=\"btn btn-lg btn-info btn-block mt-3\" type=\"submit\">
-\t\t\t\tSe connecter
-\t\t\t</button>
-            <hr>
-            <p class=\"text-center\">Ou souhaitez-vous <a href=\"";
-        // line 35
+        ";
+        // line 44
+        echo "
+        <button class=\"btn btn-lg btn-info btn-block mt-3\" type=\"submit\">
+            Se connecter
+        </button>
+        <hr>
+        <p class=\"text-center\"><a href=\"";
+        // line 49
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("reset_password");
+        echo "\">Mot de passe oublié</a> ?</p>
+        <p class=\"text-center\">Ou souhaitez-vous <a href=\"";
+        // line 50
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("register");
         echo "\">créer un compte</a> ?</p>
-\t\t</form>
-\t</div>
+    </form>
+</div>
+
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -165,49 +188,65 @@ class __TwigTemplate_fc372df0ec226fa9f414e7ba3db2d64678673f382d666a77405de0b8c44
 
     public function getDebugInfo()
     {
-        return array (  143 => 35,  133 => 28,  125 => 23,  120 => 20,  114 => 17,  110 => 16,  106 => 14,  104 => 13,  101 => 12,  95 => 10,  93 => 9,  89 => 7,  79 => 6,  59 => 3,  36 => 1,);
+        return array (  165 => 50,  161 => 49,  154 => 44,  148 => 31,  140 => 26,  135 => 23,  127 => 20,  124 => 19,  122 => 18,  119 => 17,  110 => 14,  107 => 13,  103 => 12,  100 => 11,  94 => 9,  92 => 8,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("{% extends 'base.html.twig' %}
 
-{% block title %}Se connecter - La Boutique Informatique
-{% endblock %}
+{% block title %}Se connecter - La Boutique Informatique{% endblock %}
 
 {% block content %}
-\t<div class=\"block-small\">
-\t\t<form method=\"post\">
-\t\t\t{% if error %}
-\t\t\t\t<div class=\"alert alert-danger\">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
-\t\t\t{% endif %}
+<div class=\"\">
+    <form method=\"post\">
+        {% if error %}
+            <div class=\"alert alert-danger\">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+        {% endif %}
+        
+        {% for message in app.flashes('notice') %}
+            <div class=\"alert alert-info\">
+                {{ message }}
+            </div>
+        {% endfor %}
 
-\t\t\t{% if app.user %}
-\t\t\t\t<div class=\"mb-3\">
-\t\t\t\t\tYou are logged in as
-\t\t\t\t\t{{ app.user.username }},
-\t\t\t\t\t<a href=\"{{ path('app_logout') }}\">Logout</a>
-\t\t\t\t</div>
-\t\t\t{% endif %}
+        {% if app.user %}
+            <div class=\"mb-3\">
+                You are logged in as {{ app.user.username }}, <a href=\"{{ path('app_logout') }}\">Logout</a>
+            </div>
+        {% endif %}
 
-\t\t\t<h1 class=\"h3 mb-3 font-weight-normal\">Merci de vous connecter</h1>
-\t\t\t<label for=\"inputEmail\">Votre Email</label>
-\t\t\t<input type=\"email\" value=\"{{ last_username }}\" name=\"email\" id=\"inputEmail\" class=\"form-control\" placeholder=\"Votre adresse email\" required autofocus>
-\t\t\t<label for=\"inputPassword\">Votre mot de passe</label>
-\t\t\t<input type=\"password\" name=\"password\" id=\"inputPassword\" class=\"form-control\" placeholder=\"Votre mot de passe\" required>
+        <h1 class=\"h3 mb-3 font-weight-normal\">Merci de vous connecter</h1>
+        <label for=\"inputEmail\">Votre Email</label>
+        <input type=\"email\" value=\"{{ last_username }}\" name=\"email\" id=\"inputEmail\" class=\"form-control\" placeholder=\"Votre adresse email\" required autofocus>
+        <label for=\"inputPassword\">Votre mot de passe</label>
+        <input type=\"password\" name=\"password\" id=\"inputPassword\" class=\"form-control\" placeholder=\"Votre mot de passe\" required>
 
-\t\t\t<input
-\t\t\ttype=\"hidden\" name=\"_csrf_token\" value=\"{{ csrf_token('authenticate') }}\">
+        <input type=\"hidden\" name=\"_csrf_token\"
+            value=\"{{ csrf_token('authenticate') }}\"
+        >
 
+        {#
+            Uncomment this section and add a remember_me option below your firewall to activate remember me functionality.
+            See https://symfony.com/doc/current/security/remember_me.html
 
-\t\t\t<button class=\"btn btn-lg btn-info btn-block mt-3\" type=\"submit\">
-\t\t\t\tSe connecter
-\t\t\t</button>
-            <hr>
-            <p class=\"text-center\">Ou souhaitez-vous <a href=\"{{ path('register') }}\">créer un compte</a> ?</p>
-\t\t</form>
-\t</div>
+            <div class=\"checkbox mb-3\">
+                <label>
+                    <input type=\"checkbox\" name=\"_remember_me\"> Remember me
+                </label>
+            </div>
+        #}
+
+        <button class=\"btn btn-lg btn-info btn-block mt-3\" type=\"submit\">
+            Se connecter
+        </button>
+        <hr>
+        <p class=\"text-center\"><a href=\"{{ path('reset_password') }}\">Mot de passe oublié</a> ?</p>
+        <p class=\"text-center\">Ou souhaitez-vous <a href=\"{{ path('register') }}\">créer un compte</a> ?</p>
+    </form>
+</div>
+
 {% endblock %}
-", "security/login.html.twig", "C:\\Users\\alexa\\Documents\\ALL GIT\\La-boutique-informatique_AL\\templates\\security\\login.html.twig");
+", "security/login.html.twig", "C:\\Users\\alexa\\Documents\\ALL GIT\\LBI_ASH\\templates\\security\\login.html.twig");
     }
 }

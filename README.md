@@ -2,4 +2,4 @@
 
 Bilel, Mehdi, Alexandre, Arsenio
 
-Vente à distance pour les matériels informatique
+Vente à distance pour les matériels informatique.

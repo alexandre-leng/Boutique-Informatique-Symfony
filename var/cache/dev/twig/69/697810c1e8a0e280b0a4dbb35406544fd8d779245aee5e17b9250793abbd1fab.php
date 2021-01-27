@@ -88,7 +88,7 @@ class __TwigTemplate_2a079c99943a57dc097bb8c1b1f3ac075cbe31944767222307bfc4d8435
         echo "<a href=\"";
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("account_address_add");
         echo "\" class=\"btn btn-info btn-sm float-right\">Ajouter une adresse</a>
-    <h1>Mes Adresse</h1>
+    <h1>Mes Adresses</h1>
     C'est dans cet espace que vous allez pouvoir gérer toutes vos adresses. <br>
     <a href=\"";
         // line 9
@@ -191,7 +191,7 @@ class __TwigTemplate_2a079c99943a57dc097bb8c1b1f3ac075cbe31944767222307bfc4d8435
 
 {% block content %}
 <a href=\"{{ path('account_address_add')}}\" class=\"btn btn-info btn-sm float-right\">Ajouter une adresse</a>
-    <h1>Mes Adresse</h1>
+    <h1>Mes Adresses</h1>
     C'est dans cet espace que vous allez pouvoir gérer toutes vos adresses. <br>
     <a href=\"{{ path('account') }}\">Retour</a>
     <hr>
@@ -222,6 +222,6 @@ class __TwigTemplate_2a079c99943a57dc097bb8c1b1f3ac075cbe31944767222307bfc4d8435
     {% endif %}
     
 {% endblock %}
-", "account/address.html.twig", "C:\\Users\\alexa\\Documents\\ALL GIT\\La-boutique-informatique_AL\\templates\\account\\address.html.twig");
+", "account/address.html.twig", "C:\\Users\\alexa\\Documents\\ALL GIT\\LBI_ASH\\templates\\account\\address.html.twig");
     }
 }

@@ -1,5 +1,9 @@
 {% extends 'base.html.twig' %}
 
+{% block javascript %}
+    <script src="https://js.stripe.com/v3/"></script>
+{% endblock %}
+
 {% block title %}Paiement de ma commande - La Boutique Informatique{% endblock %}
 
 {% block content %}
@@ -16,10 +20,9 @@
             <hr>
             <p class="font-weight-bold">Mon transporteur</p>
             <div class="form-check">
-                <p class="font-weight-bold">
-                {{ carrier.name }}</p>
+                <p class="font-weight-bold">{{ carrier.name }}</p>
                 {{ carrier.description }} <br>
-                {{ carrier.price|number_format(2, ',', '.') }}€
+                {{ (carrier.price / 100)|number_format(2, ',', '.') }}€
             </div>
             
         </div>
@@ -50,10 +53,45 @@
             </div>
             <hr>
             <p class="font-weight-bold">Sous-Total : {{ (total / 100)|number_format(2, ',', '.') }}€</p>
-            <p>Livraison : {{ (carrier.price)|number_format(2, ',', '.') }}€</p>
+            <p>Livraison : {{ (carrier.price / 100)|number_format(2, ',', '.') }}€</p>
             <hr>
-            <p>Total : {{ ((total / 100) + carrier.price)|number_format(2, ',', '.') }}€</p>
-            <a href="" class="btn btn-success btn-block mt-3">Payer {{ ((total / 100) + carrier.price)|number_format(2, ',', '.') }}€</a>
+            <p>Total : {{ ((total / 100) + (carrier.price / 100))|number_format(2, ',', '.') }}€</p>
+            <a class="btn btn-success btn-block mt-3" id="checkout-button">Payer {{ ((total / 100) + (carrier.price / 100))|number_format(2, ',', '.') }}€</a>
         </div>
     </div>
+{% endblock %}
+
+{% block script %}
+<!-- STRIPE avec du JavaScript -->
+    <script type="text/javascript">
+        var stripe = Stripe("pk_test_51IBKXBFJETszbBWbobJHPPKF3q24KlnOeHgL8v69znj8q0QGyTIG2kapK68XNrIQJs7KAOOqJ2JCP7M5sTzkqsnR00sRsS2OYE");
+        var checkoutButton = document.getElementById("checkout-button");
+        checkoutButton.addEventListener("click", function () {
+            fetch("/commande/create-session/{{ reference }}", {
+                method: "POST",
+            })
+            .then(function (response) {
+                return response.json();
+            })
+            .then(function (session) {
+                if (session.error == 'order') {
+                    // Redirection
+                    window.location.replace('{{ path('order') }}');
+                } else {
+                    return stripe.redirectToCheckout({ sessionId: session.id });
+                }
+            })
+            .then(function (result) {
+                // If redirectToCheckout fails due to a browser or network
+                // error, you should display the localized error message to your
+                // customer using error.message.
+                if (result.error) {
+                    alert(result.error.message);
+                }
+            })
+            .catch(function (error) {
+                console.error("Error:", error);
+            });
+        });
+    </script>
 {% endblock %}

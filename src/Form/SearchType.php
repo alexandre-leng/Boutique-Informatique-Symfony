@@ -2,7 +2,7 @@
 
 namespace App\Form;
 
-use App\Classe\Search;
+use App\Class\Search;
 use App\Entity\Category;
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
@@ -34,7 +34,7 @@ class SearchType extends AbstractType
             ->add('submit', SubmitType::class, [
                 'label' => 'Filtrer',
                 'attr' => [
-                    'class' => 'btn-block btn-info'
+                    'class' => 'btn-block btn-primary'
                 ]
             ])
         ;

@@ -102,38 +102,41 @@ class __TwigTemplate_e00b6d8e45bdf2da62c11db7307108148521c3263351c9c45feb9c2f022
         // line 16
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["products"]) || array_key_exists("products", $context) ? $context["products"] : (function () { throw new RuntimeError('Variable "products" does not exist.', 16, $this->source); })()));
+        $context['loop'] = [
+          'parent' => $context['_parent'],
+          'index0' => 0,
+          'index'  => 1,
+          'first'  => true,
+        ];
+        if (is_array($context['_seq']) || (is_object($context['_seq']) && $context['_seq'] instanceof \Countable)) {
+            $length = count($context['_seq']);
+            $context['loop']['revindex0'] = $length - 1;
+            $context['loop']['revindex'] = $length;
+            $context['loop']['length'] = $length;
+            $context['loop']['last'] = 1 === $length;
+        }
         foreach ($context['_seq'] as $context["_key"] => $context["product"]) {
             // line 17
             echo "                    <div class=\"col-md-4\">
-                        <div class=\"product-item text-center\">
-                            <a href=\"";
+                        ";
+            // line 18
+            $this->loadTemplate("product/single_product.html.twig", "product/index.html.twig", 18)->display($context);
             // line 19
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("product", ["slug" => twig_get_attribute($this->env, $this->source, $context["product"], "slug", [], "any", false, false, false, 19)]), "html", null, true);
-            echo "\"><img src=\"/uploads/";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "illustration", [], "any", false, false, false, 19), "html", null, true);
-            echo "\" alt=\"";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "name", [], "any", false, false, false, 19), "html", null, true);
-            echo "\" class=\"img-fluid\"></a>
-                            <h5>";
-            // line 20
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "name", [], "any", false, false, false, 20), "html", null, true);
-            echo "</h5>
-                            <span class=\"product-subtitle\">";
-            // line 21
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "subtitle", [], "any", false, false, false, 21), "html", null, true);
-            echo "</span>
-                            <span class=\"product-price\">";
-            // line 22
-            echo twig_escape_filter($this->env, twig_number_format_filter($this->env, (twig_get_attribute($this->env, $this->source, $context["product"], "price", [], "any", false, false, false, 22) / 100), 2, ",", "."), "html", null, true);
-            echo "€</span>
-                        </div>
-                    </div>
+            echo "                    </div>
                 ";
+            ++$context['loop']['index0'];
+            ++$context['loop']['index'];
+            $context['loop']['first'] = false;
+            if (isset($context['loop']['length'])) {
+                --$context['loop']['revindex0'];
+                --$context['loop']['revindex'];
+                $context['loop']['last'] = 0 === $context['loop']['revindex0'];
+            }
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['product'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 26
+        // line 21
         echo "            </div>
         </div>
     </div>
@@ -160,7 +163,7 @@ class __TwigTemplate_e00b6d8e45bdf2da62c11db7307108148521c3263351c9c45feb9c2f022
 
     public function getDebugInfo()
     {
-        return array (  137 => 26,  127 => 22,  123 => 21,  119 => 20,  111 => 19,  107 => 17,  103 => 16,  93 => 9,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  140 => 21,  125 => 19,  123 => 18,  120 => 17,  103 => 16,  93 => 9,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -182,12 +185,7 @@ class __TwigTemplate_e00b6d8e45bdf2da62c11db7307108148521c3263351c9c45feb9c2f022
             <div class=\"row product-container\">
                 {% for product in products %}
                     <div class=\"col-md-4\">
-                        <div class=\"product-item text-center\">
-                            <a href=\"{{ path('product', { 'slug' : product.slug }) }}\"><img src=\"/uploads/{{ product.illustration }}\" alt=\"{{ product.name }}\" class=\"img-fluid\"></a>
-                            <h5>{{ product.name }}</h5>
-                            <span class=\"product-subtitle\">{{ product.subtitle }}</span>
-                            <span class=\"product-price\">{{ (product.price / 100)|number_format(2, ',', '.') }}€</span>
-                        </div>
+                        {% include 'product/single_product.html.twig' %}
                     </div>
                 {% endfor %}
             </div>
@@ -196,6 +194,6 @@ class __TwigTemplate_e00b6d8e45bdf2da62c11db7307108148521c3263351c9c45feb9c2f022
     
     
 {% endblock %}
-", "product/index.html.twig", "C:\\Users\\alexa\\Documents\\ALL GIT\\La-boutique-informatique_AL\\templates\\product\\index.html.twig");
+", "product/index.html.twig", "C:\\Users\\alexa\\Documents\\ALL GIT\\LBI_ASH\\templates\\product\\index.html.twig");
     }
 }

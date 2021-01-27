@@ -121,6 +121,76 @@ class __TwigTemplate_8cb1448584da514cdadec49a7290215adcd0fa43de66ba6ee0f6fb8b7c3
         echo "\" class=\"btn btn-primary\">Ajouter au panier</a>
         </div>
     </div>
+    <hr>
+    <h3>Nos meilleures ventes</h3>
+    <p>Découvrez les produits les plus vendus</p>
+    <div class=\"row\">
+        ";
+        // line 25
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable((isset($context["products"]) || array_key_exists("products", $context) ? $context["products"] : (function () { throw new RuntimeError('Variable "products" does not exist.', 25, $this->source); })()));
+        $context['loop'] = [
+          'parent' => $context['_parent'],
+          'index0' => 0,
+          'index'  => 1,
+          'first'  => true,
+        ];
+        if (is_array($context['_seq']) || (is_object($context['_seq']) && $context['_seq'] instanceof \Countable)) {
+            $length = count($context['_seq']);
+            $context['loop']['revindex0'] = $length - 1;
+            $context['loop']['revindex'] = $length;
+            $context['loop']['length'] = $length;
+            $context['loop']['last'] = 1 === $length;
+        }
+        foreach ($context['_seq'] as $context["_key"] => $context["product"]) {
+            // line 26
+            echo "            ";
+            if ((1 === twig_compare(twig_length_filter($this->env, (isset($context["products"]) || array_key_exists("products", $context) ? $context["products"] : (function () { throw new RuntimeError('Variable "products" does not exist.', 26, $this->source); })())), 4))) {
+                // line 27
+                echo "                <div class=\"col-md-2\">
+                    ";
+                // line 28
+                $this->loadTemplate("product/single_product.html.twig", "product/show.html.twig", 28)->display($context);
+                // line 29
+                echo "                </div>
+            ";
+            } elseif ((1 === twig_compare(twig_length_filter($this->env,             // line 30
+(isset($context["products"]) || array_key_exists("products", $context) ? $context["products"] : (function () { throw new RuntimeError('Variable "products" does not exist.', 30, $this->source); })())), 3))) {
+                // line 31
+                echo "                <div class=\"col-md-3\">
+                    ";
+                // line 32
+                $this->loadTemplate("product/single_product.html.twig", "product/show.html.twig", 32)->display($context);
+                // line 33
+                echo "                </div>
+            ";
+            } elseif ((-1 === twig_compare(twig_length_filter($this->env,             // line 34
+(isset($context["products"]) || array_key_exists("products", $context) ? $context["products"] : (function () { throw new RuntimeError('Variable "products" does not exist.', 34, $this->source); })())), 4))) {
+                // line 35
+                echo "                <div class=\"col-md-4\">
+                    ";
+                // line 36
+                $this->loadTemplate("product/single_product.html.twig", "product/show.html.twig", 36)->display($context);
+                // line 37
+                echo "                </div>
+            ";
+            }
+            // line 39
+            echo "        ";
+            ++$context['loop']['index0'];
+            ++$context['loop']['index'];
+            $context['loop']['first'] = false;
+            if (isset($context['loop']['length'])) {
+                --$context['loop']['revindex0'];
+                --$context['loop']['revindex'];
+                $context['loop']['last'] = 0 === $context['loop']['revindex0'];
+            }
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['product'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 40
+        echo "    </div>
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -142,7 +212,7 @@ class __TwigTemplate_8cb1448584da514cdadec49a7290215adcd0fa43de66ba6ee0f6fb8b7c3
 
     public function getDebugInfo()
     {
-        return array (  120 => 18,  115 => 16,  109 => 13,  105 => 12,  101 => 11,  93 => 8,  89 => 6,  79 => 5,  59 => 3,  36 => 1,);
+        return array (  193 => 40,  179 => 39,  175 => 37,  173 => 36,  170 => 35,  168 => 34,  165 => 33,  163 => 32,  160 => 31,  158 => 30,  155 => 29,  153 => 28,  150 => 27,  147 => 26,  130 => 25,  120 => 18,  115 => 16,  109 => 13,  105 => 12,  101 => 11,  93 => 8,  89 => 6,  79 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -167,7 +237,27 @@ class __TwigTemplate_8cb1448584da514cdadec49a7290215adcd0fa43de66ba6ee0f6fb8b7c3
             <a href=\"{{ path('add_to_cart', {'id' : product.id} ) }}\" class=\"btn btn-primary\">Ajouter au panier</a>
         </div>
     </div>
+    <hr>
+    <h3>Nos meilleures ventes</h3>
+    <p>Découvrez les produits les plus vendus</p>
+    <div class=\"row\">
+        {% for product in products %}
+            {% if products|length > 4 %}
+                <div class=\"col-md-2\">
+                    {% include 'product/single_product.html.twig' %}
+                </div>
+            {% elseif products|length > 3 %}
+                <div class=\"col-md-3\">
+                    {% include 'product/single_product.html.twig' %}
+                </div>
+            {% elseif products|length < 4 %}
+                <div class=\"col-md-4\">
+                    {% include 'product/single_product.html.twig' %}
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
 {% endblock %}
-", "product/show.html.twig", "C:\\Users\\alexa\\Documents\\ALL GIT\\La-boutique-informatique_AL\\templates\\product\\show.html.twig");
+", "product/show.html.twig", "C:\\Users\\alexa\\Documents\\ALL GIT\\LBI_ASH\\templates\\product\\show.html.twig");
     }
 }
