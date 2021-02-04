@@ -6,6 +6,7 @@ Vente à distance pour les matériels informatique. Commerce numérique par inte
 Projet de fin d'étude WF3 Marseille.
 
 A faire tourner sous PHP 8.0 
-Ne fonctionne pas sous les versions antérieures !!!!!
+Ne fonctionne pas sous les versions antérieures !
+Ne fonctionne qu'en HTTPS !
 
-Démo : http://laboutiqueinformatique.energie-go.fr/
+Démo : https://laboutiqueinformatique.energie-go.fr/
