@@ -10,4 +10,4 @@ Ne fonctionne pas sous les versions antérieures !
 Le serveur de démo ne supporte pas malheureusement le https, ce qui génère quelques érreur.
 Si on le met sur un serveur qui supporte HTTPS tout fonctionne bien !
 
-Démo : https://laboutiqueinformatique.energie-go.fr/
+Démo : http://laboutiqueinformatique.energie-go.fr/
